@@ -1,0 +1,144 @@
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    height: 100vh;
+    margin: 0;
+    background-image: url('img/52.png.png'); /* Укажите путь к вашему PNG изображению */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.header {
+    text-align: center; 
+    margin: 0; 
+    width: 100%; 
+}
+
+.header h1 {
+    font-size: 100px; 
+    font-family: 'Roboto', sans-serif; 
+    margin: 0; 
+    color: white; 
+    text-shadow: 
+        -2px -2px 0 rgba(0, 0, 0, 0.7),  
+        2px -2px 0 rgba(0, 0, 0, 0.7),
+        -2px 2px 0 rgba(0, 0, 0, 0.7),
+        2px 2px 0 rgba(0, 0, 0, 0.7); /* Увеличенная обводка */
+}
+
+.icon {
+    max-width: 150px; 
+    max-height: 150px; 
+    vertical-align: middle; 
+    display: inline-block; 
+    transition: transform 0.3s ease; 
+}
+
+.icon:hover {
+    transform: translateY(-4px); 
+}
+
+.start-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: absolute; 
+}
+
+.start-button:hover {
+    background-color: #0056b3;
+}
+
+.chat-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 600px; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin: 20px auto; 
+    position: relative; /* Для позиционирования изображений */
+}
+
+.chat-box {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    height: 200px; 
+    width: 100%; 
+    background-color: #fafafa;
+    overflow: hidden; 
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px; 
+    width: calc(100% - 22px); 
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px; 
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.side-image {
+    position: absolute;
+    width: 50px; /* Ширина изображений */
+    height: auto; 
+    z-index: 2; 
+}
+
+.left {
+    left: 10px; 
+    top: 80%; 
+    transform: translateY(-50%); 
+}
+
+.right {
+    right: 140px; 
+    top: 80%; 
+    transform: translateY(-50%); 
+}
+.hui {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    height: 100px; 
+    left: 10%;
+    position: absolute;
+    width: auto; 
+    background-color: #fafafa;
+    overflow: hidden; 
+}
+.lox {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    height: 100px; 
+    left: 10%;
+    position: absolute;
+    width: auto; 
+    background-color: #fafafa;
+    overflow: hidden; 
+}
